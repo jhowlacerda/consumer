@@ -1,0 +1,6 @@
+spring:
+  rabbitmq:
+    addresses: amqps://eaeuwium:qsiuCrHd0S_PDB9wCBScAOh3ZMZTNSBf@stingray.rmq.cloudamqp.com/eaeuwium
+
+queue:
+  fiap: fiap.1scjr.mensagens
