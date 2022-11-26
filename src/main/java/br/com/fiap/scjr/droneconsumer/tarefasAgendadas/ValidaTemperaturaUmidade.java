@@ -1,6 +1,6 @@
 package br.com.fiap.scjr.droneconsumer.tarefasAgendadas;
 
-import br.com.fiap.scjr.rabbitconsumer.consumer.QueueConsumer;
+import br.com.fiap.scjr.droneconsumer.consumer.QueueConsumer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
