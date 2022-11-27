@@ -1,6 +1,6 @@
-package br.com.fiap.scjr.droneconsumer.consumer;
+package br.com.fiap.consumer.consumer;
 
-import br.com.fiap.scjr.droneconsumer.tarefasAgendadas.ValidaTemperaturaUmidade;
+import br.com.fiap.consumer.tarefasAgendadas.ValidaTemperaturaUmidade;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

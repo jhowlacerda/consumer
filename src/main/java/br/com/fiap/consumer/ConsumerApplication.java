@@ -1,4 +1,4 @@
-package br.com.fiap.scjr.droneconsumer;
+package br.com.fiap.consumer;
 
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
@@ -8,10 +8,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableRabbit
 @EnableScheduling
-public class DroneConsumerApplication {
+public class ConsumerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DroneConsumerApplication.class, args);
+		SpringApplication.run(ConsumerApplication.class, args);
 	}
 
 }
