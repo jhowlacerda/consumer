@@ -8,13 +8,13 @@
 		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.fiap.1scjr</groupId>
-	<artifactId>rabbit-consumer</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>rabbit-consumer</name>
+	<groupId>br.com.fiap</groupId>
+	<artifactId>consumer</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<name>consumer</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -22,11 +22,12 @@
 			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 
+		<!-- Avaliando uso do JsonProperty... -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-mail</artifactId>
+			<artifactId>spring-boot-starter-json</artifactId>
 		</dependency>
-
+		<!-- -->
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>

@@ -1,10 +1,10 @@
-package br.com.fiap.scjr.droneconsumer;
+package br.com.fiap.consumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RabbitConsumerApplicationTests {
+class ConsumerApplicationTests {
 
 	@Test
 	void contextLoads() {

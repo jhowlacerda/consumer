@@ -1,5 +1,13 @@
+spring:
+  rabbitmq:
+    addresses: 
+
 queue:
-  drone: drone.report.status
+  normal: status.normal
+  alert: status.alert
+  fixedRate: 60000
+
+# FIXME A execução não respeita o número da porta definido (conflito com o producer!)
 server:
-  port: 8081
+  port: 8080
 
