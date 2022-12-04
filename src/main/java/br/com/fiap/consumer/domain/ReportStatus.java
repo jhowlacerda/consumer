@@ -19,7 +19,7 @@ public class ReportStatus implements Comparable<ReportStatus> {
 
     @Override
     public int compareTo(ReportStatus o) {
-        return o.getIdDrone().compareTo(this.getIdDrone());
+        return this.getIdDrone().compareTo(o.getIdDrone());
     }
 
 }

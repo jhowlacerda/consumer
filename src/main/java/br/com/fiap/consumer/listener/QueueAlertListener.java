@@ -27,15 +27,14 @@ public class QueueAlertListener {
     @Scheduled(fixedRateString = "${queue.fixedRate}")
     public void prepareReport() {
         this.listReportAlert.clear();
-        for(ReportStatus statusAlert: this.listStatusAlert) {
-            this.listReportAlert.add(statusAlert);
-            //this.listStatusAlert.remove(statusAlert); // FIXME Concurrency access!
-        }
+        this.listReportAlert.addAll(this.listStatusAlert);
+        this.listStatusAlert.removeAll(this.listReportAlert);
+        //this.listStatusAlert.clear();
         sendReport();
     }
 
     public void sendReport() {
-        Collections.sort(this.listReportAlert);   // TODO É necessário ordenar os dados por drone?
+        Collections.sort(this.listReportAlert);
         log.info("Status recolhidos: " + this.listReportAlert.size());
         for(ReportStatus statusAlert: this.listReportAlert) {
             log.info(statusAlert.toString());
