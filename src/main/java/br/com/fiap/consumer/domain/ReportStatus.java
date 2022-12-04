@@ -1,23 +1,25 @@
 package br.com.fiap.consumer.domain;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
-import java.io.Serializable;
-
-@Deprecated
+@NoArgsConstructor
+@AllArgsConstructor
 @ToString(includeFieldNames = true)
-public record ReportStatus(
-        @JsonProperty("id") String id,
-        @JsonProperty("latitude") double latitude,
-        @JsonProperty("longitude") double longitude,
-        @JsonProperty("temperatura") int temperatura,
-        @JsonProperty("umidade") int umidade
-) implements Serializable, Comparable<ReportStatus> {
+@Data
+public class ReportStatus implements Comparable<ReportStatus> {
+
+    private String idDrone;
+    private double latitude;
+    private double longitude;
+    private int temperatura;
+    private int umidade;
 
     @Override
     public int compareTo(ReportStatus o) {
-        return o.compareTo(this);
+        return o.getIdDrone().compareTo(this.getIdDrone());
     }
 
 }

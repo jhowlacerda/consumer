@@ -1,13 +1,8 @@
 spring:
   rabbitmq:
-    addresses: 
+    addresses:
 
 queue:
   normal: status.normal
   alert: status.alert
   fixedRate: 60000
-
-# FIXME A execução não respeita o número da porta definido (conflito com o producer!)
-server:
-  port: 8080
-
