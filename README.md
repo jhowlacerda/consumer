@@ -65,7 +65,10 @@ Verifique os procedimentos descritos em "Execute o teste!" no repositório [prod
 
 ### Resultado esperado
 
-#### Em construção...
+#### Relatório de alertas
+
+![AlertReport](docs/images/result_report_alerts01.PNG)
+![AlertReport](docs/images/result_report_alerts02.PNG)
 
 --- 
 
